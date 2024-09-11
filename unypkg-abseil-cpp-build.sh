@@ -82,6 +82,7 @@ cmake \
     -DABSL_ENABLE_INSTALL=ON \
     -DABSL_PROPAGATE_CXX_STD=ON \
     -DCMAKE_INSTALL_LIBDIR=lib \
+    -DBUILD_SHARED_LIBS=ON \
     -DCMAKE_INSTALL_PREFIX=/uny/pkg/"$pkgname"/"$pkgver" \
     .
 
