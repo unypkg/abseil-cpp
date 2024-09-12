@@ -79,8 +79,8 @@ unset LD_RUN_PATH
 
 cmake \
     -DBUILD_TESTING=OFF \
-    -DABSL_ENABLE_INSTALL=ON \
-    -DABSL_PROPAGATE_CXX_STD=ON \
+    -DCMAKE_CXX_STANDARD=17 \
+    -DBUILD_SHARED_LIBS=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_INSTALL_PREFIX=/uny/pkg/"$pkgname"/"$pkgver" \
     .
