@@ -35,7 +35,7 @@ mkdir -pv /uny/sources
 cd /uny/sources || exit
 
 pkgname="abseil-cpp"
-pkggit="https://github.com/abseil/abseil-cpp.git refs/tags/*"
+pkggit="https://github.com/abseil/abseil-cpp.git refs/tags/20240116.2*"
 gitdepth="--depth=1"
 
 ### Get version info from git remote
@@ -82,6 +82,7 @@ cmake \
     -DABSL_ENABLE_INSTALL=ON \
     -DABSL_PROPAGATE_CXX_STD=ON \
     -DCMAKE_INSTALL_LIBDIR=lib \
+    -DBUILD_SHARED_LIBS=ON \
     -DCMAKE_INSTALL_PREFIX=/uny/pkg/"$pkgname"/"$pkgver" \
     .
 
