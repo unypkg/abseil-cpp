@@ -35,7 +35,7 @@ mkdir -pv /uny/sources
 cd /uny/sources || exit
 
 pkgname="abseil-cpp"
-pkggit="https://github.com/abseil/abseil-cpp.git refs/tags/*" #20220623.1
+pkggit="https://github.com/abseil/abseil-cpp.git refs/tags/20220623.1"
 gitdepth="--depth=1"
 
 ### Get version info from git remote
